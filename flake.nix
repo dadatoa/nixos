@@ -51,8 +51,8 @@
         system = "x86_64-linux";
         modules = [ 
           inputs.disko.nixosModules.default
-          (import ./hosts/nara17/disko.nix { device = "/dev/nvme0n1";})
-          ./hosts/nara17/configuration.nix
+          (import ./hosts/utm-lab-1/disko.nix { device = "/dev/nvme0n1";})
+          ./hosts/utm-lab-1/configuration.nix
         ];
       };
     };
