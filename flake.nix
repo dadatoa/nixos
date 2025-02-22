@@ -33,6 +33,12 @@
           ./customIso/aarch64virt.nix 
           ];
       };
+      x86_64Iso = nixpkgs.lib.nixosSystem {
+        system = "x86_64-linux";
+        modules = [ 
+          ./customIso/x86_64.nix 
+          ];
+      };
       utm-lab-1 = nixpkgs.lib.nixosSystem {
         system = "aarch64-linux";
         modules = [ 
