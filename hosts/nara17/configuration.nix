@@ -2,9 +2,9 @@
 {
 
   imports = [
-    /etc/nixos/hardware-configuration.nix
-    ../modules/base-config.nix
-    ../modules/users.nix
+    ../../hardware-configuration.nix
+    ../common-modules/configuration.nix
+    ../common-modules/users.nix
 
     ./systemcron.nix
   ]

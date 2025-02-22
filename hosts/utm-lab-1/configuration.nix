@@ -1,9 +1,9 @@
 { config, pckgs, ... }:
 {
   imports = [
-    ../modules/base-config.nix
-    ../modules/users.nix
-    /etc/nixos/hardware-configuration.nix
+    ../common-modules/configuration.nix
+    ../common-modules/users.nix
+    ../../hardware-configuration.nix
   ];
 
   networking.hostName = "utm-lab-1";
