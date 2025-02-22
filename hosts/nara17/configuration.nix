@@ -3,6 +3,7 @@
   imports = [
     ../common-modules/configuration.nix
     ../common-modules/users.nix
+    ./storage.nix
     /etc/nixos/hardware-configuration.nix
   ];
 
