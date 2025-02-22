@@ -4,6 +4,7 @@
     ../common-modules/configuration.nix
     ../common-modules/users.nix
     ./storage.nix
+    ./virtualisation.nix
     /etc/nixos/hardware-configuration.nix
   ];
 
