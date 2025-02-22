@@ -2,7 +2,7 @@
 {
 
   imports = [
-    ../../hardware-configuration.nix
+    /mnt/etc/nixos/hardware-configuration.nix
     ../common-modules/configuration.nix
     ../common-modules/users.nix
 
