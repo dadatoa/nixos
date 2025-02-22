@@ -52,7 +52,7 @@
         modules = [ 
           inputs.disko.nixosModules.default
           (import ./hosts/nara17/disko.nix { device = "/dev/nvme0n1";})
-          ./hosts/utm-lab-1/configuration.nix
+          ./hosts/nara17/configuration.nix
         ];
       };
     };
