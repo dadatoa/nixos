@@ -53,7 +53,7 @@
           inputs.disko.nixosModules.default
           (import ./hosts/nara17/disko.nix { device = "/dev/nvme0n1";})
           ./hosts/nara17/configuration.nix
-          ];
+        ];
       };
     };
 
