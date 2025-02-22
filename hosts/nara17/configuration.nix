@@ -7,7 +7,7 @@
     ../common-modules/users.nix
 
     ./systemcron.nix
-  ]
+  ];
   networking = {
     hostName = "nara17";
     ## enable networking config with network manager
