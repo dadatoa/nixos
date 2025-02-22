@@ -10,6 +10,6 @@
   networking.firewall.enable = false;
 
   services.samba.enable = true;
-  services.samba.packages = [ pkgs.samba4Full ];
+  services.samba.package = [ pkgs.samba4Full ];
   services.samba.openFirewall = true;
 }
