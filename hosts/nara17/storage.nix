@@ -6,17 +6,17 @@
       options = [ "subvol=appdata" ];
     };
 
-  # fileSystems."/data/media" =
-  #   { device = "/dev/sda1";
-  #     fsType = "btrfs";
-  #     options = [ "subvol=media" "users" ];
-  #   };
+  fileSystems."/data/media" =
+    { device = "/dev/sda1";
+      fsType = "btrfs";
+      options = [ "subvol=media" ];
+    };
 
-  # fileSystems."/mnt/share" =
-  #   { device = "/dev/sda1";
-  #     fsType = "btrfs";
-  #     options = [ "subvol=share" "users" ];
-  #   };
+  fileSystems."/share" =
+    { device = "/dev/sda1";
+      fsType = "btrfs";
+      options = [ "subvol=share" ];
+    };
 
   # fileSystems."/mnt/datapool" =
   #   { device = "/dev/sda1";
