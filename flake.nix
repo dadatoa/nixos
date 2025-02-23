@@ -59,7 +59,7 @@
         system = "x86_64-linux";
         modules = [ 
           inputs.disko.nixosModules.default
-          (import ./hosts/macmini/disko.nix { device = "/dev/sda";})
+          (import ./hosts/macmini/disko.nix { device = "/dev/sdb";})
           ./hosts/macmini/configuration.nix
         ];
       };
