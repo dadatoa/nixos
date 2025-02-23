@@ -9,7 +9,7 @@
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.systemd-boot.configurationLimit = 10;
-  boot.loader.systemd-boot.consoleMode = 0;
+  boot.loader.systemd-boot.consoleMode = "0";
   # boot.initrd.kernelModules = [ "wl" ];
   # boot.kernelModules = [ "88x2bu" ]; # "wl"
   # boot.extraModulePackages = [ config.boot.kernelPackages.broadcom_sta ];
