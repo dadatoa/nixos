@@ -3,7 +3,7 @@
   imports = [
     ../common-modules/configuration.nix
     ../common-modules/users.nix
-    ../../hardware-configuration.nix
+    /etc/nixos/hardware-configuration.nix
   ];
 
   networking.hostName = "macmini";

@@ -55,6 +55,14 @@
           ./hosts/nara17/configuration.nix
         ];
       };
+      macmini = nixpkgs.lib.nixosSystem {
+        system = "x86_64-linux";
+        modules = [ 
+          inputs.disko.nixosModules.default
+          (import ./hosts/macmini/disko.nix { device = "/dev/sda";})
+          ./hosts/macmini/configuration.nix
+        ];
+      };
     };
 
     darwinConfigurations = {
