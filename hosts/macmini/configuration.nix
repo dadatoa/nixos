@@ -5,7 +5,10 @@
     ../common-modules/users.nix
     /etc/nixos/hardware-configuration.nix
   ];
-
+  
+  # resodre le prob de nomodetest?
+  # boot.initrd.kernelModules = [ "fbcon" ];
+  boot.kernelParams = [ “nomodeset” ];
   networking.hostName = "macmini";
   networking.firewall.enable = false;
   
